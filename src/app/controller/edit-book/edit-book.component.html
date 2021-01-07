@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1" style="margin: auto">Cap nhat sach</span>
+  </div>
+</nav>
+<div style="width: 500px; margin: auto">
+<p>Them sach moi</p>
+<form (ngSubmit)="editBook(book.id)">
+  <table>
+    <tr>
+      <td>Ten:</td>
+      <td><input type="text" name="name" [(ngModel)]="book.title"></td>
+    </tr>
+    <tr>
+      <td>Tac gia:</td>
+      <td><input type="text" name="des" [(ngModel)]="book.author"></td>
+    </tr>
+    <tr>
+      <td>Mo ta:</td>
+      <td><input type="text" name="price" [(ngModel)]="book.description"></td>
+    </tr>
+    <br>
+
+    <tr>
+      <td><button type="submit" style="margin-left: 50px">Cap nhat</button></td>
+      <td><button routerLink="/" style="margin-left: 50px">Thoat</button></td>
+    </tr>
+  </table>
+</form>
+</div>

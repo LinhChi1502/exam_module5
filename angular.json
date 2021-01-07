@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "exammodule5"
+  "defaultProject": "exammodule5",
+  "cli": {
+    "analytics": "07001b09-c464-4ca2-b133-27568a94be1c"
+  }
 }

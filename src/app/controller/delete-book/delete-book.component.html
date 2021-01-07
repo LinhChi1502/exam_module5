@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1" style="margin: auto">Xoa sach</span>
+  </div>
+</nav>
+
+<div style="width: 500px;margin: auto">
+  <p>Xoa sach</p>
+  <p>Ten sach: {{book.title}}</p>
+  <p>Tac gia: {{book.author}}</p>
+  <p>Mo ta: </p>
+  <p>{{book.description}}</p>
+  <p>
+    <button (click)="deleteBook(book.id)" style="margin-left: 100px">Xoa sach</button>
+    <button routerLink="/" style="margin-left: 50px">Thoat</button>
+  </p>
+</div>

@@ -1,0 +1,49 @@
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1" style="margin: auto">Them moi sach</span>
+  </div>
+</nav>
+
+<!--<form (ngSubmit)="createNewBook()">-->
+<!--  <table>-->
+<!--    <tr>-->
+<!--      <td>Ten:</td>-->
+<!--      <td><input type="text" name="title" [(ngModel)]="book.title"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Tac gia:</td>-->
+<!--      <td><input type="text" name="author" [(ngModel)]="book.author"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Mo ta:</td>-->
+<!--      <td><textarea name="description"  cols="30" rows="10" [(ngModel)]="book.description"></textarea></td>-->
+<!--    </tr>-->
+
+
+<!--    <tr>-->
+<!--      <td><button type="submit">Them moi</button></td>-->
+<!--      <td><button routerLink="/">Thoat</button></td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</form>-->
+
+<form (ngSubmit)="createNewBook()" style="width: 500px; margin: auto">
+  <div class="mb-3">
+    <p style="font-weight: bold">Them sach moi</p>
+  </div>
+  <div class="mb-3">
+    <label for="title" class="form-label">Ten:</label>
+    <input type="text" class="form-control" id="title" name="title" [(ngModel)]="book.title">
+  </div>
+  <div class="mb-3">
+    <label for="author" class="form-label">Tac gia:</label>
+    <input type="text" class="form-control" id="author" name="author" [(ngModel)]="book.author">
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Mo ta:</label>
+    <textarea name="description" id="description" cols="70" rows="10" [(ngModel)]="book.description"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" style="margin-left: 100px">Them moi</button>
+  <button class="btn btn-primary" routerLink="/" style="margin-left: 50px">Thoat</button>
+</form>

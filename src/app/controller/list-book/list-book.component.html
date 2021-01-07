@@ -1,0 +1,45 @@
+
+<!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1" style="margin: auto">Danh sach cac cuon sach</span>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <p>Co <span>{{books.length}}</span> cuon sach</p>
+    </div>
+
+    <div class="col-md-3">
+      <p><button routerLink="create-book">Them sach moi</button></p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Ten sach</th>
+          <th scope="col">Tac gia</th>
+          <th scope="col" colspan="2"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let book of books; let i = index">
+          <th scope="row">{{i + 1}}</th>
+          <td><a [routerLink]="['/detail-book/', book.id]">{{book.title}}</a></td>
+          <td>{{book.author}}</td>
+          <td><a [routerLink]="['/delete-book/', book.id]">xoa</a></td>
+          <td><a [routerLink]="['/edit-book', book.id]">sua</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
